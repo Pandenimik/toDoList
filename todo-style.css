@@ -2,11 +2,21 @@
 * {
     box-sizing: border-box;
   }
+
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+  }
+
+  .center {
+    margin: 0 auto;
+    width: 900px;
+  }
   
   /* Remove margins and padding from the list */
   ul {
     margin: 0;
     padding: 0;
+    list-style: none;
   }
   
   /* Style the list items */
@@ -77,21 +87,19 @@
     text-align: center;
   }
   
-  /* Clear floats after the header */
-  .header:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
   /* Style the input */
+.form-wraper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+
   input {
     margin: 0;
     border: none;
     border-radius: 0;
     width: 75%;
     padding: 10px;
-    float: left;
     font-size: 16px;
   }
   
@@ -101,7 +109,6 @@
     width: 25%;
     background: #d9d9d9;
     color: #555;
-    float: left;
     text-align: center;
     font-size: 16px;
     cursor: pointer;

@@ -8,21 +8,25 @@
   <title>Список дел</title>
 </head>
 <body>
-
-  <div id="myDIV" class="header">
-    <h2>My To Do List</h2>
-    <input type="text" id="myInput" placeholder="Title...">
-    <span onclick="newElement()" class="addBtn">Add</span>
+  <div class="center">
+    <div id="myDIV" class="header">
+      <h2>Список дел</h2>
+      <div class="form-wraper">
+        <input type="text" id="myInput" placeholder="Нужно сделать...">
+        <div class="addBtn" onclick="newElement()">Добавить</div>
+      </div>
+    </div>
+  
+    <ul id="myUL">
+      <li>Hit the gym</li>
+      <li class="checked">Pay bills</li>
+      <li>Meet George</li>
+      <li>Buy eggs</li>
+      <li>Read a book</li>
+      <li>Organize office</li>
+    </ul> 
   </div>
   
-  <ul id="myUL">
-    <li>Hit the gym</li>
-    <li class="checked">Pay bills</li>
-    <li>Meet George</li>
-    <li>Buy eggs</li>
-    <li>Read a book</li>
-    <li>Organize office</li>
-  </ul> 
 
   <script src="todo-script.js"></script>
     
